@@ -1,0 +1,9 @@
+# Local Python environments and bytecode
+venv/
+backend/venv/
+__pycache__/
+*.py[cod]
+
+# Local credentials
+.env
+backend/.env
