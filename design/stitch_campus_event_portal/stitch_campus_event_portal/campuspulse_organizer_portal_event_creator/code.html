@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Plus+Jakarta+Sans:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-tertiary":"#472a00","primary-fixed":"#e1e0ff","on-background":"#dae2fd","surface-bright":"#31394d","tertiary-container":"#ca8100","inverse-on-surface":"#283044","tertiary":"#ffb95f","on-tertiary-container":"#3e2400","tertiary-fixed-dim":"#ffb95f","on-secondary-fixed-variant":"#92002a","on-surface-variant":"#c7c4d7","on-secondary-fixed":"#40000d","surface-container-high":"#222a3d","on-primary-fixed":"#07006c","primary-container":"#8083ff","inverse-surface":"#dae2fd","surface-container-low":"#131b2e","secondary-container":"#b50036","outline":"#908fa0","surface-variant":"#2d3449","primary":"#c0c1ff","tertiary-fixed":"#ffddb8","surface-container":"#171f33","on-primary-container":"#0d0096","on-secondary-container":"#ffc2c4","error-container":"#93000a","secondary-fixed-dim":"#ffb2b7","surface-container-lowest":"#060e20","on-primary":"#1000a9","primary-fixed-dim":"#c0c1ff","secondary-fixed":"#ffdadb","outline-variant":"#464554","on-primary-fixed-variant":"#2f2ebe","on-surface":"#dae2fd","on-error-container":"#ffdad6","on-tertiary-fixed":"#2a1700","inverse-primary":"#494bd6","background":"#0b1326","on-error":"#690005","secondary":"#ffb2b7","surface-container-highest":"#2d3449","on-tertiary-fixed-variant":"#653e00","surface-tint":"#c0c1ff","surface-dim":"#0b1326","surface":"#0b1326","error":"#ffb4ab","on-secondary":"#67001b"},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"0.75rem",full:"9999px"},spacing:{"gutter":"1.5rem","space-md":"1rem","space-xl":"2.5rem","space-xs":"0.25rem","space-lg":"1.5rem","margin-mobile":"1rem","margin":"2rem","gutter-mobile":"1rem","space-sm":"0.5rem"},fontFamily:{"label-lg":["Plus Jakarta Sans"],"body-sm":["Inter"],"label-md":["Plus Jakarta Sans"],"display-hero":["Plus Jakarta Sans"],"display-hero-mobile":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"headline-lg-mobile":["Plus Jakarta Sans"],"title-md":["Plus Jakarta Sans"],"body-lg":["Inter"],"body-md":["Inter"],"headline-lg":["Plus Jakarta Sans"],"label-sm":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"]},fontSize:{"label-lg":["14px",{lineHeight:"20px",letterSpacing:"0.01em",fontWeight:"600"}],"body-sm":["12px",{lineHeight:"18px",fontWeight:"400"}],"label-md":["12px",{lineHeight:"16px",letterSpacing:"0.04em",fontWeight:"700"}],"display-hero":["48px",{lineHeight:"56px",letterSpacing:"-0.03em",fontWeight:"800"}],"display-hero-mobile":["32px",{lineHeight:"40px",letterSpacing:"-0.02em",fontWeight:"800"}],"headline-md":["24px",{lineHeight:"32px",letterSpacing:"-0.01em",fontWeight:"700"}],"headline-lg-mobile":["26px",{lineHeight:"34px",letterSpacing:"-0.015em",fontWeight:"700"}],"title-md":["16px",{lineHeight:"24px",fontWeight:"600"}],"body-lg":["16px",{lineHeight:"26px",fontWeight:"400"}],"body-md":["14px",{lineHeight:"22px",fontWeight:"400"}],"headline-lg":["36px",{lineHeight:"44px",letterSpacing:"-0.02em",fontWeight:"700"}],"label-sm":["11px",{lineHeight:"14px",letterSpacing:"0.05em",fontWeight:"700"}],"headline-sm":["20px",{lineHeight:"28px",fontWeight:"600"}]}}}};</script></head><body class="bg-background font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-lowest z-50 flex flex-col pt-6 pb-6 shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="px-6 mb-8 flex items-center gap-space-sm"><img alt="CampusPulse Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrBxpRsOeVqLKvKh6JszfCo9wTHBFntHcOhaLzX_QfPiO9gID3kgw5xUQ70lHOxo51SNRNNjXEjuRYtpJFE-zyVb40ID2XU1wlq_CsOLNRmHU6_A9bKOWo8bSa6ETPP0OT7eLZ0C6ub3aCEaIiL5BzX8IwL_2Xv0IqAhIPlSvu5dla3HO9FA70hP5-95dQ9o2MctwpJK3P2hbxUng-NEvqRDZUTfXOt7LJEvzqlPC0g"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm font-bold tracking-tight text-on-surface leading-tight">CampusPulse</span><span class="font-label-sm text-label-sm text-primary tracking-wider uppercase">Operations Core</span></div></div><div class="px-4 mb-4"><div class="p-3 rounded-xl bg-surface-container-low"><div class="flex items-center justify-between mb-1.5"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Active Identity</span><span class="w-2 h-2 rounded-full bg-secondary-fixed animate-pulse"></span></div><div class="font-label-md text-label-md text-on-surface truncate">usr_4e2d81</div><div class="font-body-sm text-body-sm text-on-surface-variant truncate">organizer.maya@campus.edu</div></div></div><nav class="flex-1 px-4 flex flex-col gap-1" data-active-classes="bg-surface-container-high text-primary font-bold shadow-sm"><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="discover-events" href="#"><span class="material-symbols-outlined text-[20px]">explore</span>Discover Events</a><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="my-registrations" href="#"><span class="material-symbols-outlined text-[20px]">confirmation_number</span>My Registrations</a><a aria-current="page" class="flex items-center justify-between px-3.5 py-2.5 rounded-xl transition-all bg-surface-container-high text-primary font-bold shadow-sm" data-path="organizer-portal" href="#"><div class="flex items-center gap-3"><span class="material-symbols-outlined text-[20px]">event_available</span><span>Organizer Portal</span></div><span class="px-1.5 py-0.5 rounded text-[10px] uppercase font-bold bg-primary-container text-on-primary-container">Organizer</span></a><a class="flex items-center justify-between px-3.5 py-2.5 rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="admin-reports" href="#"><div class="flex items-center gap-3"><span class="material-symbols-outlined text-[20px]">analytics</span><span>Admin Reports</span></div><span class="px-1.5 py-0.5 rounded text-[10px] uppercase font-bold bg-tertiary-container text-on-tertiary-container">Admin</span></a><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="api-and-db-inspector" href="#"><span class="material-symbols-outlined text-[20px]">terminal</span>API & DB Inspector</a></nav><div class="px-4 pt-4 mt-auto border-t border-outline-variant/20"><div class="flex items-center gap-2 p-2 rounded-xl bg-surface-container-low"><div class="w-2 h-2 rounded-full bg-primary"></div><span class="font-label-sm text-label-sm text-on-surface-variant font-mono">PostgreSQL : 5432</span></div></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-20 bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-gutter"><div class="flex items-center gap-3"><div class="flex items-center gap-space-xs px-2.5 py-1 rounded-full bg-secondary-container/20 text-secondary"><span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span><span class="font-label-sm text-label-sm uppercase tracking-wider">⚡ Live Campus Feed</span></div></div><div class="flex items-center gap-space-md"><div class="flex items-center bg-surface-container-low px-2.5 py-1.5 rounded-lg shadow-sm"><div class="flex flex-col text-left mr-2"><span class="font-label-sm text-label-sm text-on-surface-variant leading-none">Simulated Role</span><div class="flex items-center gap-1 mt-0.5"><span class="font-label-md text-label-md text-primary font-bold">⚡ Organizer</span></div></div><div class="flex items-center gap-1"><button class="px-2 py-0.5 rounded text-[10px] font-bold bg-surface-container-high text-on-surface-variant hover:bg-surface-container-highest hover:text-on-surface transition-colors" type="button">Student</button><button class="px-2 py-0.5 rounded text-[10px] font-bold bg-surface-container text-on-surface hover:bg-surface-container-highest hover:text-on-surface transition-colors" type="button">Organizer</button><button class="px-2 py-0.5 rounded text-[10px] font-bold bg-surface-container-high text-on-surface-variant hover:bg-surface-container-highest hover:text-on-surface transition-colors" type="button">Admin</button></div></div><div class="flex items-center bg-surface-container-low px-3 py-1.5 rounded-lg shadow-sm gap-2"><div class="flex flex-col text-left"><div class="flex items-center gap-1"><span class="font-label-sm text-label-sm text-on-surface-variant">UUID:</span><code class="font-label-sm text-label-sm text-tertiary font-mono">usr_4e2d81</code></div><span class="font-body-sm text-body-sm text-on-surface-variant">organizer.maya@campus.edu</span></div><span class="material-symbols-outlined text-on-surface-variant text-[18px]">unfold_more</span></div><div class="relative"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-surface-container-highest" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCmOZIBiks3jL7vglLcNLmK28WKkNEthRZIkIJhN14O9N7xXN1dToZlGfclZt9q3ulj07mCLYJIAUmipGYpwzS1SnW1auimjrQ8T1c0aXrMFqjRL41bGb8GI-XSGjLshRrPXJezmJUE3STV3N4drsHk6p4peT8X5mQSzsCIwqxzC6-uiRJFU9MTlaQtzyXqBCxYeNk1dXRsKfPPdBulP7gCGDZsxiSuyRaW1UPGZ3Q"/><span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-secondary-fixed ring-2 ring-surface-container-lowest"></span></div></div></header><main class="w-full pt-20 bg-background min-h-screen"><div class="flex flex-col w-full">
+<div class="px-8 py-8 flex flex-col gap-8 max-w-[1600px] mx-auto w-full">
+<!-- Top Organizer Control Bar & Superpower Notice -->
+<section class="relative overflow-hidden rounded-2xl bg-surface-container-low shadow-xl p-6 md:p-8 backdrop-blur-xl">
+<div class="absolute -right-24 -top-24 w-96 h-96 rounded-full bg-primary/10 blur-3xl pointer-events-none"></div>
+<div class="absolute right-1/3 -bottom-20 w-80 h-80 rounded-full bg-secondary/10 blur-3xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col lg:flex-row lg:items-center justify-between gap-6">
+<div class="flex flex-col gap-2 max-w-3xl">
+<div class="flex flex-wrap items-center gap-2">
+<span class="px-2.5 py-1 rounded-full bg-primary-container/30 text-primary font-label-sm text-label-sm uppercase tracking-wider flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-ping"></span>
+              Organizer Console
+            </span>
+<span class="font-mono text-xs text-on-surface-variant bg-surface-container px-2 py-0.5 rounded">
+              UUID: 4e2d819a-c941-41be-8f3b-organizer
+            </span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">
+            Welcome Organizer <span class="text-primary font-bold">Maya Lin</span>
+</h1>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+<span class="text-tertiary font-semibold">⚡ Dual Role Privilege Active:</span> As an authenticated Campus Organizer, you possess dual permissions: authoring and publishing premier university initiatives <code class="text-xs text-primary font-mono">(POST /api/events)</code> while seamlessly reserving your own access credentials to peer events <code class="text-xs text-secondary font-mono">(POST /api/registrations)</code>.
+          </p>
+</div>
+<div class="flex items-center gap-3 shrink-0">
+<button class="px-5 py-3 rounded-xl bg-primary text-on-primary font-label-lg text-label-lg shadow-lg shadow-primary/20 hover:bg-primary-container transition-all flex items-center gap-2" id="open-create-btn" onclick="document.getElementById('create-modal').classList.remove('hidden')">
+<span class="material-symbols-outlined text-[20px]">add_circle</span>
+            Create New Event
+          </button>
+<button class="px-4 py-3 rounded-xl bg-surface-container-high text-on-surface font-label-md text-label-md hover:bg-surface-container-highest transition-colors flex items-center gap-2 shadow-sm" onclick="simulateRegisterSelf()">
+<span class="material-symbols-outlined text-secondary text-[20px]">how_to_reg</span>
+<span>Self-Register Test</span>
+</button>
+</div>
+</div>
+<!-- Quick Superpower Metrics Pill Bar -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6 pt-6 bg-surface-container/50 -mx-6 md:-mx-8 -mb-6 md:-mb-8 px-6 md:px-8 py-4">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-surface-container-highest flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">calendar_month</span>
+</div>
+<div>
+<div class="font-label-sm text-label-sm text-on-surface-variant uppercase">Active Hosted</div>
+<div class="font-headline-sm text-headline-sm text-on-surface">3 Events</div>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-surface-container-highest flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[22px]">group</span>
+</div>
+<div>
+<div class="font-label-sm text-label-sm text-on-surface-variant uppercase">Total Registered</div>
+<div class="font-headline-sm text-headline-sm text-on-surface">618 Students</div>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-surface-container-highest flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[22px]">speed</span>
+</div>
+<div>
+<div class="font-label-sm text-label-sm text-on-surface-variant uppercase">Avg Capacity Filled</div>
+<div class="font-headline-sm text-headline-sm text-on-surface">88.4%</div>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-surface-container-highest flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined text-[22px]">verified_user</span>
+</div>
+<div>
+<div class="font-label-sm text-label-sm text-on-surface-variant uppercase">Access Verification</div>
+<div class="font-label-md text-label-md text-primary truncate">RLS Organizer Validated</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Main Two-Column Working Surface: Hosted Events & Active Attendee Inspector -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-8 items-start">
+<!-- Left Panel: My Hosted Events Table (7 cols) -->
+<section class="xl:col-span-7 flex flex-col gap-5">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-3 h-3 rounded-full bg-primary"></div>
+<h2 class="font-headline-md text-headline-md text-on-surface">My Hosted Events</h2>
+<span class="px-2 py-0.5 rounded-full text-xs font-mono bg-surface-container text-on-surface-variant">schema: events</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">filter: organizer_id = current_user()</span>
+</div>
+<div class="bg-surface-container-low rounded-2xl p-2 shadow-lg overflow-hidden backdrop-blur-xl">
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-highest/60 text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-3 px-4 rounded-l-lg">Event & Venue</th>
+<th class="py-3 px-4">Status</th>
+<th class="py-3 px-4">Capacity Utilization</th>
+<th class="py-3 px-4 text-right rounded-r-lg">Action</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-transparent font-body-sm text-body-sm text-on-surface">
+<!-- Row 1: Hackathon (Active Focus) -->
+<tr class="bg-surface-container-high/40 hover:bg-surface-container-high transition-colors cursor-pointer group" onclick="switchActiveEvent('Annual Tech Odyssey Hackathon', 'evt_91a0b3', 184, 200, 'Open')">
+<td class="py-4 px-4">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-primary/20 text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">terminal</span>
+</div>
+<div class="min-w-0">
+<div class="font-title-md text-title-md text-on-surface truncate group-hover:text-primary transition-colors">Annual Tech Odyssey Hackathon</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-2">
+<span>Grand Hall C</span>
+<span>•</span>
+<span class="font-mono text-[11px] text-outline">id: evt_91a0b3</span>
+</div>
+</div>
+</div>
+</td>
+<td class="py-4 px-4 whitespace-nowrap">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-semibold bg-secondary-container/30 text-secondary">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span>
+                      Open
+                    </span>
+</td>
+<td class="py-4 px-4 min-w-[180px]">
+<div class="flex justify-between items-center text-xs mb-1 font-mono">
+<span class="text-on-surface font-semibold">184 / 200</span>
+<span class="text-tertiary">92%</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container-highest overflow-hidden">
+<div class="h-full bg-gradient-to-r from-primary to-secondary rounded-full" style="width: 92%"></div>
+</div>
+</td>
+<td class="py-4 px-4 text-right whitespace-nowrap">
+<span class="inline-flex items-center gap-1 text-xs font-semibold text-primary px-3 py-1 rounded-lg bg-surface-container-highest group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+                      Inspect
+                    </span>
+</td>
+</tr>
+<!-- Row 2: Quantum Computing Symposium -->
+<tr class="hover:bg-surface-container-high/40 transition-colors cursor-pointer group" onclick="switchActiveEvent('Quantum Computing Horizons', 'evt_3c89ff', 120, 120, 'Open')">
+<td class="py-4 px-4">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-tertiary-container/20 text-tertiary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">blur_on</span>
+</div>
+<div class="min-w-0">
+<div class="font-title-md text-title-md text-on-surface truncate group-hover:text-primary transition-colors">Quantum Computing Horizons</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-2">
+<span>Science Complex 402</span>
+<span>•</span>
+<span class="font-mono text-[11px] text-outline">id: evt_3c89ff</span>
+</div>
+</div>
+</div>
+</td>
+<td class="py-4 px-4 whitespace-nowrap">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-semibold bg-tertiary-container/30 text-tertiary">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+                      Sold Out
+                    </span>
+</td>
+<td class="py-4 px-4 min-w-[180px]">
+<div class="flex justify-between items-center text-xs mb-1 font-mono">
+<span class="text-on-surface font-semibold">120 / 120</span>
+<span class="text-error">100%</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container-highest overflow-hidden">
+<div class="h-full bg-error rounded-full" style="width: 100%"></div>
+</div>
+</td>
+<td class="py-4 px-4 text-right whitespace-nowrap">
+<span class="inline-flex items-center gap-1 text-xs font-semibold text-on-surface-variant px-3 py-1 rounded-lg bg-surface-container-highest group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+                      Inspect
+                    </span>
+</td>
+</tr>
+<!-- Row 3: Design Thinking Sprint -->
+<tr class="hover:bg-surface-container-high/40 transition-colors cursor-pointer group" onclick="switchActiveEvent('Design Sprint 2025: Biomimicry', 'evt_55d12a', 45, 80, 'Draft')">
+<td class="py-4 px-4">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-surface-container-highest text-on-surface-variant flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">architecture</span>
+</div>
+<div class="min-w-0">
+<div class="font-title-md text-title-md text-on-surface truncate group-hover:text-primary transition-colors">Design Sprint 2025: Biomimicry</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-2">
+<span>Studio Lab 9</span>
+<span>•</span>
+<span class="font-mono text-[11px] text-outline">id: evt_55d12a</span>
+</div>
+</div>
+</div>
+</td>
+<td class="py-4 px-4 whitespace-nowrap">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-semibold bg-surface-container-highest text-on-surface-variant">
+<span class="w-1.5 h-1.5 rounded-full bg-outline"></span>
+                      Draft
+                    </span>
+</td>
+<td class="py-4 px-4 min-w-[180px]">
+<div class="flex justify-between items-center text-xs mb-1 font-mono">
+<span class="text-on-surface font-semibold">45 / 80</span>
+<span class="text-primary">56%</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container-highest overflow-hidden">
+<div class="h-full bg-primary rounded-full" style="width: 56%"></div>
+</div>
+</td>
+<td class="py-4 px-4 text-right whitespace-nowrap">
+<span class="inline-flex items-center gap-1 text-xs font-semibold text-on-surface-variant px-3 py-1 rounded-lg bg-surface-container-highest group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+                      Inspect
+                    </span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- Real-Time Velocity / Live Ticket Stream SVG Sparkline -->
+<div class="p-6 rounded-2xl bg-surface-container-low shadow-lg flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<div>
+<div class="font-label-sm text-label-sm text-on-surface-variant uppercase">Registration Velocity</div>
+<div class="font-title-md text-title-md text-on-surface">Today's Check-in & RSVP Momentum</div>
+</div>
+<span class="text-xs text-secondary font-mono bg-secondary-container/20 px-2 py-1 rounded">+34 rsvp / hr peak</span>
+</div>
+<!-- Inline Sparkline Curve Chart -->
+<div class="w-full h-28 relative">
+<svg class="w-full h-full overflow-visible" preserveaspectratio="none" viewbox="0 0 600 100">
+<defs>
+<lineargradient id="grad-vel" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0%" stop-color="#8083ff" stop-opacity="0.35"></stop>
+<stop offset="100%" stop-color="#8083ff" stop-opacity="0.0"></stop>
+</lineargradient>
+</defs>
+<path d="M0,85 Q60,70 120,60 T240,40 T360,65 T480,20 T600,10 L600,100 L0,100 Z" fill="url(#grad-vel)"></path>
+<path d="M0,85 Q60,70 120,60 T240,40 T360,65 T480,20 T600,10" fill="none" stroke="#8083ff" stroke-linecap="round" stroke-width="3"></path>
+<circle class="animate-pulse" cx="480" cy="20" fill="#ffb95f" r="4"></circle>
+<circle cx="600" cy="10" fill="#ffb2b7" r="5"></circle>
+</svg>
+<div class="flex justify-between items-center text-[10px] font-mono text-on-surface-variant pt-2">
+<span>08:00 AM</span>
+<span>11:00 AM</span>
+<span>02:00 PM</span>
+<span>05:00 PM</span>
+<span>LIVE NOW</span>
+</div>
+</div>
+</div>
+<!-- Featured Venue Atmosphere Preview -->
+<div class="relative overflow-hidden rounded-2xl bg-surface-container-low shadow-md h-48 flex items-end p-6">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="An energetic modern campus hackathon hall illuminated with vivid indigo, cyan, and coral ambient neon strip lighting. College students sit in modern pods with laptops and whiteboards under architectural university rafters." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDw6SRZpLaogz4qqbQ0JkpFh5aO2v7YzPD5h1Dh2cMTjzaRXFSlFfVWJ6AbQMOHbZL5AAYZJs0oR4KjU9WNUVcEhiQKzX3OM5mi-1ITwR6CRyo_jDQFNOx6tGPe0nd52YCk9PM6L0k8ENvnaS-fcoHqPZzRgBZ1jYzoDyb9CYcLfyt0FBXy-09iP5ogdrNykAxZGxo6pqCga0TuEkyC1Enq5oQk15v2Kg9Mxz9RS0A')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/60 to-transparent"></div>
+<div class="relative z-10 flex items-center justify-between w-full">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Verified Venue</span>
+<div class="font-title-md text-title-md text-on-surface">Campus Grand Hall C • Tech Node</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Equipped with 2.5 Gbps redundant Wi-Fi & QR turnstiles</div>
+</div>
+<span class="material-symbols-outlined text-primary text-[28px]">wifi_tethering</span>
+</div>
+</div>
+</section>
+<!-- Right Panel: Attendee Inspector Drawer (5 cols) -->
+<section class="xl:col-span-5 flex flex-col gap-5">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary text-[22px]">badge</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">Attendee Inspector</h2>
+</div>
+<span class="text-xs font-mono bg-secondary-container/20 text-secondary px-2.5 py-1 rounded-full font-semibold">GET /api/events/{id}/registrations</span>
+</div>
+<!-- Security Rule Banner -->
+<div class="rounded-xl bg-surface-container-low p-4 shadow-sm flex items-start gap-3">
+<span class="material-symbols-outlined text-tertiary text-[20px] shrink-0 mt-0.5">lock_person</span>
+<div class="flex flex-col gap-0.5">
+<span class="font-label-md text-label-md text-tertiary">Security Rule Enforced</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant leading-tight">
+              Registration rosters and student credentials are strictly restricted to the owning Organizer (<code class="text-primary font-mono text-[11px]">organizer_id = 4e2d81</code>). External lookups yield HTTP 403 Forbidden.
+            </span>
+</div>
+</div>
+<!-- Inspector Card Content -->
+<div class="bg-surface-container-low rounded-2xl p-6 shadow-xl flex flex-col gap-6 backdrop-blur-xl">
+<div class="flex flex-col gap-2 pb-4 border-b border-surface-container-highest">
+<div class="flex items-center justify-between">
+<span class="px-2 py-0.5 rounded text-[11px] font-mono font-bold bg-primary-container text-on-primary-container" id="inspect-tag">EVENT ID: evt_91a0b3</span>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-sm text-label-sm flex items-center gap-1.5 transition-colors" onclick="exportCSV()">
+<span class="material-symbols-outlined text-[16px] text-secondary">download</span>
+                Export CSV
+              </button>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface" id="inspect-title">Annual Tech Odyssey Hackathon</h3>
+<div class="flex items-center gap-4 text-xs font-mono text-on-surface-variant">
+<span>Capacity: <strong class="text-on-surface" id="inspect-cap">184 / 200</strong></span>
+<span>•</span>
+<span class="text-secondary font-semibold">92% Claimed</span>
+</div>
+</div>
+<!-- Quick Filter / Search within Event -->
+<div class="flex items-center gap-2 bg-surface-container rounded-xl px-3 py-2">
+<span class="material-symbols-outlined text-on-surface-variant text-[18px]">search</span>
+<input class="bg-transparent border-0 outline-none w-full text-on-surface font-body-sm text-body-sm placeholder:text-outline-variant" id="attendee-search" oninput="filterAttendees()" placeholder="Search UUID, name or student email..." type="text"/>
+<span class="text-[10px] font-mono text-outline px-1.5 py-0.5 rounded bg-surface-container-high">⌘K</span>
+</div>
+<!-- Attendee List -->
+<div class="flex flex-col gap-2.5 max-h-[460px] overflow-y-auto pr-1" id="attendee-list">
+<!-- Attendee 1 -->
+<div class="attendee-item p-3.5 rounded-xl bg-surface-container flex items-center justify-between gap-3 hover:bg-surface-container-high transition-colors">
+<div class="flex items-center gap-3 min-w-0">
+<div class="w-9 h-9 rounded-full bg-primary/20 text-primary flex items-center justify-center font-bold text-xs shrink-0">
+                  SL
+                </div>
+<div class="min-w-0">
+<div class="font-title-md text-title-md text-on-surface truncate">Siddharth Lee</div>
+<div class="font-mono text-xs text-on-surface-variant truncate">usr_88a412 • slee@campus.edu</div>
+<div class="font-body-sm text-[11px] text-outline">Registered: 2025-03-24 14:12:08 UTC</div>
+</div>
+</div>
+<button class="checkin-btn px-3 py-1.5 rounded-lg bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm flex items-center gap-1 hover:text-on-surface shrink-0 transition-all" onclick="toggleCheckIn(this)">
+<span class="material-symbols-outlined text-[16px]">check_box_outline_blank</span>
+<span>Check-in</span>
+</button>
+</div>
+<!-- Attendee 2 -->
+<div class="attendee-item p-3.5 rounded-xl bg-surface-container flex items-center justify-between gap-3 hover:bg-surface-container-high transition-colors">
+<div class="flex items-center gap-3 min-w-0">
+<div class="w-9 h-9 rounded-full bg-secondary/20 text-secondary flex items-center justify-center font-bold text-xs shrink-0">
+                  AR
+                </div>
+<div class="min-w-0">
+<div class="font-title-md text-title-md text-on-surface truncate">Aria Rodriguez</div>
+<div class="font-mono text-xs text-on-surface-variant truncate">usr_29df90 • arodriguez@campus.edu</div>
+<div class="font-body-sm text-[11px] text-outline">Registered: 2025-03-24 15:02:44 UTC</div>
+</div>
+</div>
+<button class="checkin-btn px-3 py-1.5 rounded-lg bg-primary text-on-primary font-label-sm text-label-sm flex items-center gap-1 shrink-0 shadow-sm" onclick="toggleCheckIn(this)">
+<span class="material-symbols-outlined text-[16px]">check_box</span>
+<span>Checked In</span>
+</button>
+</div>
+<!-- Attendee 3 -->
+<div class="attendee-item p-3.5 rounded-xl bg-surface-container flex items-center justify-between gap-3 hover:bg-surface-container-high transition-colors">
+<div class="flex items-center gap-3 min-w-0">
+<div class="w-9 h-9 rounded-full bg-tertiary/20 text-tertiary flex items-center justify-center font-bold text-xs shrink-0">
+                  KV
+                </div>
+<div class="min-w-0">
+<div class="font-title-md text-title-md text-on-surface truncate">Kaito Vance</div>
+<div class="font-mono text-xs text-on-surface-variant truncate">usr_7720ba • kvance@campus.edu</div>
+<div class="font-body-sm text-[11px] text-outline">Registered: 2025-03-24 16:30:19 UTC</div>
+</div>
+</div>
+<button class="checkin-btn px-3 py-1.5 rounded-lg bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm flex items-center gap-1 hover:text-on-surface shrink-0 transition-all" onclick="toggleCheckIn(this)">
+<span class="material-symbols-outlined text-[16px]">check_box_outline_blank</span>
+<span>Check-in</span>
+</button>
+</div>
+<!-- Attendee 4 -->
+<div class="attendee-item p-3.5 rounded-xl bg-surface-container flex items-center justify-between gap-3 hover:bg-surface-container-high transition-colors">
+<div class="flex items-center gap-3 min-w-0">
+<div class="w-9 h-9 rounded-full bg-surface-bright text-on-surface flex items-center justify-center font-bold text-xs shrink-0">
+                  EM
+                </div>
+<div class="min-w-0">
+<div class="font-title-md text-title-md text-on-surface truncate">Elena Morales</div>
+<div class="font-mono text-xs text-on-surface-variant truncate">usr_109abc • emorales@campus.edu</div>
+<div class="font-body-sm text-[11px] text-outline">Registered: 2025-03-24 18:14:02 UTC</div>
+</div>
+</div>
+<button class="checkin-btn px-3 py-1.5 rounded-lg bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm flex items-center gap-1 hover:text-on-surface shrink-0 transition-all" onclick="toggleCheckIn(this)">
+<span class="material-symbols-outlined text-[16px]">check_box_outline_blank</span>
+<span>Check-in</span>
+</button>
+</div>
+</div>
+<!-- Attendee Drawer Footer Summary -->
+<div class="pt-3 border-t border-surface-container-highest flex items-center justify-between text-xs font-mono text-on-surface-variant">
+<span>Showing 4 of 184 registered records</span>
+<span class="text-primary cursor-pointer hover:underline">Load All →</span>
+</div>
+</div>
+</section>
+</div>
+</div>
+<!-- Interactive Create New Event Modal (Hidden by Default) -->
+<div class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-surface-container-lowest/80 backdrop-blur-md hidden" id="create-modal">
+<div class="relative w-full max-w-2xl bg-surface-container-low rounded-2xl shadow-2xl p-6 md:p-8 flex flex-col gap-6 max-h-[921px] overflow-y-auto">
+<!-- Modal Header -->
+<div class="flex items-center justify-between pb-4 border-b border-surface-container-highest">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-primary/20 text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">event_available</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Publish New Event</h3>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">POST /api/events • table: events</span>
+</div>
+</div>
+<button class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container-highest transition-colors" onclick="document.getElementById('create-modal').classList.add('hidden')">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<!-- Form Body -->
+<form class="flex flex-col gap-5" id="event-create-form" onsubmit="handleCreateEvent(event)">
+<!-- Organizer ID (Autofilled DB User ID) -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider flex items-center justify-between">
+<span>Organizer Identity (Auto-Bound)</span>
+<span class="text-tertiary font-mono lowercase">session.auth.uid()</span>
+</label>
+<div class="flex items-center gap-2 bg-surface-container px-3.5 py-2.5 rounded-xl font-mono text-xs text-primary">
+<span class="material-symbols-outlined text-[18px] text-tertiary">lock</span>
+<input class="bg-transparent border-0 outline-none w-full text-on-surface font-mono" name="organizer_id" readonly="" type="text" value="4e2d819a-c941-41be-8f3b-organizer"/>
+</div>
+</div>
+<!-- Event Title -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Event Title</label>
+<input class="bg-surface-container px-4 py-3 rounded-xl font-body-md text-body-md text-on-surface placeholder:text-outline-variant outline-none focus:ring-2 focus:ring-primary transition-all" id="form-title" placeholder="e.g. AI Founders Summit & Pitch Night" required="" type="text"/>
+</div>
+<!-- Capacity Slider (int4) -->
+<div class="flex flex-col gap-2 p-4 rounded-xl bg-surface-container">
+<div class="flex items-center justify-between">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Max Capacity (int4)</label>
+<div class="font-headline-sm text-headline-sm text-primary font-mono"><span id="capacity-val">150</span> <span class="text-xs text-on-surface-variant">attendees</span></div>
+</div>
+<input class="w-full accent-primary cursor-pointer" id="form-capacity" max="1000" min="10" oninput="document.getElementById('capacity-val').innerText = this.value" step="5" type="range" value="150"/>
+<div class="flex justify-between text-[11px] font-mono text-outline-variant">
+<span>Intimate (10)</span>
+<span>Auditorium (500)</span>
+<span>Stadium (1000)</span>
+</div>
+</div>
+<!-- Event Status Toggle (Draft, Published, Open) -->
+<div class="flex flex-col gap-2">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Event Status</label>
+<div class="grid grid-cols-3 gap-2">
+<button class="status-opt py-2.5 px-3 rounded-xl font-label-md text-label-md bg-surface-container-highest text-on-surface-variant hover:text-on-surface transition-all flex items-center justify-center gap-1.5" onclick="setStatusSelect(this, 'Draft')" type="button">
+<span class="w-2 h-2 rounded-full bg-outline"></span>
+              Draft
+            </button>
+<button class="status-opt py-2.5 px-3 rounded-xl font-label-md text-label-md bg-surface-container-highest text-on-surface-variant hover:text-on-surface transition-all flex items-center justify-center gap-1.5" onclick="setStatusSelect(this, 'Published')" type="button">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+              Published
+            </button>
+<button class="status-opt active-status py-2.5 px-3 rounded-xl font-label-md text-label-md bg-primary text-on-primary shadow-md transition-all flex items-center justify-center gap-1.5" onclick="setStatusSelect(this, 'Open')" type="button">
+<span class="w-2 h-2 rounded-full bg-secondary-fixed animate-ping"></span>
+              Open
+            </button>
+</div>
+<input id="form-status" type="hidden" value="Open"/>
+</div>
+<!-- Venue & Date Group -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Date & Time</label>
+<input class="bg-surface-container px-4 py-2.5 rounded-xl font-body-sm text-body-sm text-on-surface outline-none focus:ring-2 focus:ring-primary" required="" type="datetime-local"/>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Venue Location</label>
+<input class="bg-surface-container px-4 py-2.5 rounded-xl font-body-sm text-body-sm text-on-surface outline-none focus:ring-2 focus:ring-primary" id="form-venue" placeholder="Auditorium West or Lab B" required="" type="text"/>
+</div>
+</div>
+<!-- Description -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Description & Tags</label>
+<textarea class="bg-surface-container px-4 py-3 rounded-xl font-body-sm text-body-sm text-on-surface placeholder:text-outline-variant outline-none focus:ring-2 focus:ring-primary" placeholder="Provide agenda, prereqs, speaker line-up, and tags..." rows="3"></textarea>
+</div>
+<!-- Action / Submit -->
+<div class="pt-4 border-t border-surface-container-highest flex items-center justify-end gap-3">
+<button class="px-5 py-2.5 rounded-xl font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" onclick="document.getElementById('create-modal').classList.add('hidden')" type="button">
+            Cancel
+          </button>
+<button class="px-6 py-3 rounded-xl bg-primary text-on-primary font-label-lg text-label-lg shadow-lg shadow-primary/25 hover:bg-primary-container transition-all flex items-center gap-2" id="submit-btn" type="submit">
+<span class="material-symbols-outlined text-[20px]">rocket_launch</span>
+<span>Publish Event to /api/events</span>
+</button>
+</div>
+</form>
+</div>
+</div>
+<!-- Notification Toast Container -->
+<div class="fixed bottom-6 right-6 z-50 transform translate-y-24 opacity-0 transition-all duration-300 pointer-events-none flex items-center gap-3 px-5 py-3.5 rounded-xl bg-surface-container-high text-on-surface shadow-2xl" id="toast">
+<span class="material-symbols-outlined text-secondary text-[22px]" id="toast-icon">check_circle</span>
+<span class="font-label-md text-label-md" id="toast-msg">Action successful</span>
+</div>
+</div>
+<script>
+  function setStatusSelect(btn, statusVal) {
+    document.querySelectorAll('.status-opt').forEach(b => {
+      b.className = 'status-opt py-2.5 px-3 rounded-xl font-label-md text-label-md bg-surface-container-highest text-on-surface-variant hover:text-on-surface transition-all flex items-center justify-center gap-1.5';
+    });
+    btn.className = 'status-opt active-status py-2.5 px-3 rounded-xl font-label-md text-label-md bg-primary text-on-primary shadow-md transition-all flex items-center justify-center gap-1.5';
+    document.getElementById('form-status').value = statusVal;
+  }
+
+  function showToast(message, iconName = 'check_circle', iconColor = 'text-secondary') {
+    const toast = document.getElementById('toast');
+    const toastMsg = document.getElementById('toast-msg');
+    const toastIcon = document.getElementById('toast-icon');
+    
+    toastMsg.innerText = message;
+    toastIcon.innerText = iconName;
+    toastIcon.className = `material-symbols-outlined text-[22px] ${iconColor}`;
+    
+    toast.classList.remove('translate-y-24', 'opacity-0');
+    toast.classList.add('translate-y-0', 'opacity-100');
+    
+    setTimeout(() => {
+      toast.classList.remove('translate-y-0', 'opacity-100');
+      toast.classList.add('translate-y-24', 'opacity-0');
+    }, 4000);
+  }
+
+  function handleCreateEvent(e) {
+    e.preventDefault();
+    const btn = document.getElementById('submit-btn');
+    const originalText = btn.innerHTML;
+    
+    btn.innerHTML = `<span class="material-symbols-outlined text-[20px] animate-spin">refresh</span><span>Publishing...</span>`;
+    btn.disabled = true;
+
+    setTimeout(() => {
+      btn.innerHTML = `<span class="material-symbols-outlined text-[20px]">done</span><span>Published Successfully!</span>`;
+      btn.classList.remove('bg-primary');
+      btn.classList.add('bg-secondary-container', 'text-on-secondary-container');
+
+      showToast('Event created! Schema updated: POST /api/events HTTP 201 Created', 'rocket_launch', 'text-primary');
+
+      setTimeout(() => {
+        document.getElementById('create-modal').classList.add('hidden');
+        btn.innerHTML = originalText;
+        btn.classList.remove('bg-secondary-container', 'text-on-secondary-container');
+        btn.classList.add('bg-primary');
+        btn.disabled = false;
+      }, 1200);
+    }, 900);
+  }
+
+  function switchActiveEvent(title, id, current, cap, status) {
+    document.getElementById('inspect-title').innerText = title;
+    document.getElementById('inspect-tag').innerText = `EVENT ID: ${id}`;
+    document.getElementById('inspect-cap').innerText = `${current} / ${cap}`;
+    showToast(`Loaded Attendee Roster for ${title} via GET /api/events/${id}/registrations`, 'badge', 'text-primary');
+  }
+
+  function toggleCheckIn(btn) {
+    const isChecked = btn.innerText.includes('Checked In');
+    if (!isChecked) {
+      btn.className = 'checkin-btn px-3 py-1.5 rounded-lg bg-primary text-on-primary font-label-sm text-label-sm flex items-center gap-1 shrink-0 shadow-sm';
+      btn.innerHTML = `<span class="material-symbols-outlined text-[16px]">check_box</span><span>Checked In</span>`;
+      showToast('Student check-in logged to database', 'verified', 'text-primary');
+    } else {
+      btn.className = 'checkin-btn px-3 py-1.5 rounded-lg bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm flex items-center gap-1 hover:text-on-surface shrink-0 transition-all';
+      btn.innerHTML = `<span class="material-symbols-outlined text-[16px]">check_box_outline_blank</span><span>Check-in</span>`;
+      showToast('Student check-in revoked', 'undo', 'text-outline');
+    }
+  }
+
+  function exportCSV() {
+    showToast('Exporting attendee CSV: Annual_Tech_Odyssey_Roster.csv', 'file_download', 'text-secondary');
+  }
+
+  function simulateRegisterSelf() {
+    showToast('Superpower activated! Organizer registered to Robotics Showcase via POST /api/registrations (HTTP 200)', 'how_to_reg', 'text-secondary');
+  }
+
+  function filterAttendees() {
+    const term = document.getElementById('attendee-search').value.toLowerCase();
+    const items = document.querySelectorAll('.attendee-item');
+    items.forEach(el => {
+      const txt = el.innerText.toLowerCase();
+      el.style.display = txt.includes(term) ? 'flex' : 'none';
+    });
+  }
+</script></main></div></body></html>

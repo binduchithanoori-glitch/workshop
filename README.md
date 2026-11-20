@@ -1,4 +1,19 @@
-# Events API
+# CampusPulse
+
+## Frontend
+
+The React + Vite frontend lives at the repository root and calls the deployed API at `https://workshop-hinr.onrender.com`.
+
+```sh
+npm install
+npm run dev
+```
+
+The app supports event discovery, event details, registration, attendee lists, and a personal registrations view. There is no sign-in flow. To register or load personal registrations, enter an existing UUID from the database's `users.id` column. The ID is stored in the current browser's local storage.
+
+The backend allows cross-origin requests from any origin. CORS is configured on all routes in `backend/app.py`.
+
+## Backend
 
 ## Deploy on Render
 
